@@ -1,6 +1,6 @@
 module counter23b(input clk,input reset,input stop,output reg out);
 reg[22:0] var1=0;
-reg var5=0;// cand var5=1 ceasul e oprit
+reg var5=0;
 
 always@(posedge clk)begin
 if(reset==0)
@@ -12,7 +12,7 @@ else begin
 	out<=1;
 	end
 	
-if(var5==0 && stop) //stop==1 adica este apasat
+if(var5==0 && stop) 
 var5<=1;
 else if(var5==1 && stop)
 var5<=0;	
