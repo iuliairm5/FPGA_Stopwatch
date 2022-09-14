@@ -9,7 +9,7 @@ module top(input clk,
 wire w1,w2,w3,w4,w5;
 wire[3:0] t1,t2,t3,t4;
 
-debounce DB(.clk(clk),.in(stop_start),.out(w5));//debounce pentru stop_start
+	debounce DB(.clk(clk),.in(stop_start),.out(w5));//debounce for stop_start
 
 
 counter23b c23b(.clk(clk),.reset(new_run),.stop(w5),.out(w1));
