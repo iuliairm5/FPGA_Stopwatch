@@ -1,5 +1,6 @@
 # FPGA_Stopwatch
 
+A digital circuit in Verilog
 
 - display on 4 LCDs, each consisted of 7 segments with the following configuration : minutes/seconds/hundredths , as decimal numbers
 - a new_run button: pressing the button restarts the timer from 0:00:0 and resets the state of the circuit
